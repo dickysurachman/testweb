@@ -1,21 +1,34 @@
 <html lang="en">
 <head>
+    <title>Dicky Surachman Website</title>
+    <meta name="author" content="Dicky Surachman">
+    <meta name="keywords" content="Dicky Surachman, IT Developer, Web Master, IT Management" />
+<meta name="description" content="Dicky Surachman, IT Developer, Web Master, IT Management" />
+   
+
 <meta name="viewport" content="width=device-width, initial-scale=1">
    <style>
     @import url('https://fonts.googleapis.com/css?family=Quicksand:400,700&display=swap');
-       
-
-        .kiri{
-            width:800px;
-            position: relative;
+       .foto{
+        float: left;
+        width: 100px;
+       }
+       .sticky {
+          position: fixed;
+          top: 0;
+          width: 100%
+          background-color: #00a2c6;
+          margin-left: -15px;
         }
-        nav{
-            position: sticky;
+
+        header {
+            display: inline;
         }
        nav a {
            font-size: 18px;
            font-weight: 400;
            text-decoration: none;
+           color: white;
         }
         nav a:hover {
            font-weight: bold;
@@ -45,6 +58,11 @@
            text-align: center;
            font-weight: bold;
         }
+        #mymenu{
+           background-color: #00a2c6;
+           width: 100%;
+
+        }
         .jumbotron {
            font-size: 20px;
            padding: 45px;
@@ -57,6 +75,7 @@
             align-content: center;
             position: sticky;
         }
+        
         ul {
           list-style-type: none;
           margin: 0;
@@ -67,78 +86,212 @@
              display: inline;
              margin: 15px;
         }
-        .sid{
-            position: relative;
-            max-width: 250px;
+        @media only screen and (min-width: 1024px) {    
+            .kiri{
+                float: left;
+                width: 870px;
+                padding: 10px;
+                margin-bottom: 40px;
+            }
+            footer{
+                position: fixed;
+                bottom: 0px;
+                width: 100%;
+            }
         }
-        main {
-            width: 100%;
+        .kanan{
         }
+       ul.a {
+          list-style-type: circle;
+          padding-left: 15px;
+        }
+       
    </style>
 </head>
 <body>
     <header>
     <div class="jumbotron">
+        <img src="img/profile.jpg" class="foto"/>
        <h1>Dicky Surachman</h1>
        <p>Passionate, Focus, Professional</p>
-   <nav class="menu">
+       <div id="mymenu">
+    <nav class="menu" >
        <ul>
-           <li><a href="#sejarah">Education</a></li>
-           <li><a href="#geografis">Experiences</a></li>
-           <li><a href="#wisata">Projects</a></li>
+           <li><a href="#education">Education</a></li>
+           <li><a href="#experience">Experiences</a></li>
+           <li><a href="#project">Projects</a></li>
        </ul>
    </nav>
-      </div>
+   
+    </div>
+    </div>
+    
      </header>
-	 
    <main>
-    <div class="kiri">
-   <article>         
-        <section>
-       <h2 >Wisata</h2>
-       <p>Sejak dibukanya Jalan Tol Cipularang, kota Bandung telah menjadi tujuan utama dalam menikmati liburan
-           akhir
-           pekan terutama dari masyarakat yang berasal dari Jakarta sekitarnya. Selain menjadi kota wisata belanja,
-           kota Bandung juga dikenal dengan sejumlah besar bangunan lama berarsitektur peninggalan Belanda.</p>
+   <div class="kiri">
+   <article id="experience">
+   <p>I have experience on IT field for more than 10 years, and most recently served as
+Corporate IT Manager for more than 5 years. I have abilities to develop software in
+desktop base, web base and mobile application base, also develop IT infrastructure
+such as Computer Networking, PABx, CCTV, server installation and backup systems. I
+have experience in implementing ERP, including warehousing system (Exceed, WM,
+AS400 and SAP B1), plantations (IES Nusantara) and hospitality (REALTA, VHP,
+Powerpro). I hope with my ability and experiences can help your company to achieve
+goals.
+</p>        
+    <p>This is my professional experiences</p> 
+    <section>
+       <h3 >2017-Present | Corporate IT Manager on Intiwhiz International</h3>
+       <ul class="a">
+           
+            <li>Training IT knowledge on All IT staff Hotel</li>
+            <li>Solving all issue about IT and report to Management</li>
+            <li>Suggest IT Development and Strategy to Management</li>
+            <li>Preparing System and IT infrastructure for Opening Hotel such as Computer
+            Networking, Server Installation, CCTV Installation, PABX Installation, and 
+            Backup System</li>
+            <li>Setup Mikrotik for Computer Networking on Hotels</li>
+            <li>Developing Hotel Management System for Capsule Hotel using PHP Yii
+            Framework and MySQL</li>
+            <li>Developing Online Revenue Reporting System for Management</li>
+
+       </ul>
+   </section>
+    <section>
+       <h3 >2014-2017 | Corporate Webmaster on Intiwhiz International</h3>
+       <ul class="a">
+           <li>Developing and Maintains Booking Engine System for Hotel using PHP and MySQL </li>
+<li>Developing and Maintains website for Corporate and Hotel using PHP and 
+MySQL</li> 
+<li>Preparing digital campaign, using GDN, Facebook, Instagram, Mail Blast</li>
+<li>Developing Live Chat System for Website using PHP and MySQL</li>
+<li>Developing Mail Blast System for Digital Marketing using PHP and MySQL</li>
+<li>Developing and Creating Loyalty Software for guest hotel (Whiz Mate) using PHP Yii Framework and MySQL</li>
+<li>Developing Whiz Mate mobile application on App Store and Google Play Store using B4i and B4x</li>
+<li>Interfacing API system Raiz-Gain Channel Manager with booking engine using PHP and MySQL</li>
+<li>Interfacing payment gateway system (Midtrans, Doku, Reddot) with booking engine using PHP and MySQL</li>
+       </ul>
+   </section>
+  <section>
+       <h3 >2013-2014 | IT Support on PT Cipta Tumbuh Berkembang</h3>
+       <ul class="a">
+        <li>Preparing, planning and implementing for ERP System on Kelapa Sawit 
+Company using IES Nusantara </li>
+<li>Developing and maintenance website company</li>
+<li>Developing PO System using PHP Yii Framework</li>
+<li>Maintains WAN Infrastructure between Jakarta and Kalimantan company 
+area</li>
+       </ul>
+   </section> 
+   <section>
+       <h3 >2010-2013 | IT Programmer on PT Wira Logistic</h3>
+       <ul class="a">
+         <li>Developing Daily Reporting System with automatically email sending feature 
+by Daily base for Company’s costumer using Visual Basic and Microsoft 
+Access</li>
+ <li>Interfacing system from Company’s costumer System to warehouse system 
+using .NET and SQL Server, such as Carrefour system, Coca Cola (AS 400), and 
+Sari Roti (SAP)</li>
+ <li>Creating and Maintains Payroll System using .Net and SQL Server</li>
+ <li>Creating add on Revenue System from Warehouse System (Exeed and WM 9) 
+using .NET and SQL Server</li>
+ <li>Developing Cargo System with SMS Gateway feature using Visual Basic and 
+SQL Server</li>
+ <li>Implement and training Warehouse System</li>
+ <li>Developing online reporting warehouse system for Company’s costumer 
+using PHP Yii Framework and MySQ</li>
+       </ul>
+
+   </section>
+</article>
+<article id="project">
+    <h3>These are my project as individual or team developer</h3>
+   <section>
+       <h3>2021 | KEMA Hotel Website</h3>
+       <img src="img/kema.jpg" alt="Website KEMA">
+       <p>Lead Developer for website development and Reservation Online System integrated Midtrans Payment gateway using PHP Laravel Framework and MySQL </p>
    </section>
    <section>
-       <h3>Farm House Lembang</h3>
-       <img src="img/9.jpg">
-       <p>Kota Bandung dikelilingi oleh pegunungan, sehingga bentuk morfologi wilayahnya bagaikan sebuah mangkok
-           raksasa,[9] secara geografis kota ini terletak di tengah-tengah provinsi Jawa Barat, serta berada pada
-           ketinggian ±768 m di atas permukaan laut, dengan titik tertinggi di berada di sebelah utara dengan
-           ketinggian 1.050 meter di atas permukaan laut dan sebelah selatan merupakan kawasan rendah dengan
-           ketinggian 675 meter di atas permukaan laut.</p>
+       <h3>2021 | Amoypreneur (Profile Company and Ecommerce Website)</h3>
+       <img src="img/amoy.JPG" alt="Amoypreneur Website">
+       <p>Web Developer for Developing website for personal and ecommerce business
+using PHP Yii Framework and MySQL </p>
    </section>
-   <section>
-       <h3>Observatorium Bosscha</h3>
-       <img src="img/9.jpg">
-       <p>Memiliki beberapa teleskop, antara lain, Refraktor Ganda Zeiss, Schmidt Bimasakti, Refraktor Bamberg,
-           Cassegrain GOTO, dan Teleskop Surya. Refraktor Ganda Zeiss adalah jenis teleskop terbesar untuk
-           meneropong bintang. Benda ini diletakkan pada atap kubah sehingga saat teropong digunakan, atap tersebut
-           harus dibuka. Observatorium Bosscha boleh dikunjungi oleh siapa pun, tanpa tiket. Namun, bagi yang ingin
-           menggunakan teleskop Zeiss, wajib mendaftarkan diri. Untuk instansi atau lembaga pendidikan, diberikan
-           jadwal hari Selasa sampai Jumat. Sementara itu, kunjungan individu dibuka setiap hari Sabtu.
-       </p>
+    <section>
+       <h3>2020 | Mujikaryautama </h3>
+       <img src="img/mku.jpg" alt="Amoypreneur Website">
+       <p>Web Developer for Developing property agent and company website @ 
+mujikaryautama.com</p>
    </section>
    </article>
     </div>
-   <aside class="sid">
-       <article class="profile">
-           <header>
-               <h2>Kota Bandung</h2>
-               <p>Kota Kembang Paris van Java</p>
-               <figure>
-                   <img src="img/9.jpg">
-                   <figcaption>Lambang</figcaption>
-               </figure>
-           </header>
+    <aside>
+    <div class="kanan">
+         <article class="profile">
+               <h3><u>Contact</u></h3>
+               <h4>Email</h4>
+               <u><a href="mailto:dicky.surachman1@gmail.com">dicky.surachman1@gmail.com</a></u>
+               <h4>Phone</h4>
+               <u><a href="tel:6289646361091">089646361091</a></u>
+               <h4>Address</h4>
+               <u>Tangerang, Banten</u>
+               <h4>Website</h4>
+               <u><a href="https://dickysurachman.github.io">https://dickysurachman.github.io</a></u>
        </article>
-    </aside>
+       <article class="profile">
+               <h3><u>Personal Info</u></h3>
+                <b>Gender:</b> Male<br>
+                <b>Place/Date of Birth:</b> Jakarta 12-12-1990<br>
+                <b>Religion: </b>Islam<br>
+                <b>Blood Group:</b> B<br/>
+                <b>Marital Status:</b> Married<br/>
+       </article>
+       <article class="profile" id="education">
+               <h3><u>Education</u></h3>
+                <b>2001-2006 </b>| Andalas University, Padang (Electrical Engineering)<br>
+            <b>2003-2004</b> Computer Laboratory Assistant of Technic Faculties Andalas University<br>
+                <b> 1998-2001</b> | SMU Negeri 1, Tangerang<br>
+       </article>
+       <article class="profile" id="education">
+               <h3><u>Skill</u></h3>
+               <b>Software:</b>
+               <ul class="a">
+                <li>PHP</li> 
+                <li>ASP.NET</li>
+                <li> Microsoft Visual Basic 6.0</li>
+                <li> MySQL Server</li>
+                <li> SQL Server</li>
+                <li>Postgree SQL Server</li>
+                <li> Microsoft Access</li>
+               </ul>
+        <b>Hardware:</b>
+        <ul class="a">
+        <li> Local Area and Wireless Network</li>
+        <li> Service and Maintenance Computer </li>        
+        </ul>
+        <b>Language:</b>
+        <ul class="a">
+         <li>Indonesia and English (active and passive)</li>
+        </ul>
+       </article>
+
+       <script>
+        window.onscroll = function() {myFunction()};
+        var header = document.getElementById("mymenu");
+        var sticky = header.offsetTop;
+        function myFunction() {
+          if (window.pageYOffset > sticky) {
+            header.classList.add("sticky");
+          } else {
+            header.classList.remove("sticky");
+          }
+        }
+       </script>
+    </div>
+</aside>
     </main>
-	 
-     <footer>
-        &copy; 2019, Dicoding Academy
+	  <footer>
+        &copy; 2022, Dicoding Academy
      </footer>
 </body>
 </html>
