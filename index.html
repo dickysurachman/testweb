@@ -4,129 +4,27 @@
     <meta name="author" content="Dicky Surachman">
     <meta name="keywords" content="Dicky Surachman, IT Developer, Web Master, IT Management" />
 <meta name="description" content="Dicky Surachman, IT Developer, Web Master, IT Management" />
-   
-
 <meta name="viewport" content="width=device-width, initial-scale=1">
-   <style>
-    @import url('https://fonts.googleapis.com/css?family=Quicksand:400,700&display=swap');
-       .foto{
-        float: left;
-        width: 100px;
-       }
-       .sticky {
-          position: fixed;
-          top: 0;
-          width: 100%
-          background-color: #00a2c6;
-          margin-left: -15px;
-        }
-
-        header {
-            display: inline;
-        }
-       nav a {
-           font-size: 18px;
-           font-weight: 400;
-           text-decoration: none;
-           color: white;
-        }
-        nav a:hover {
-           font-weight: bold;
-        }
-      
-       .profile header {
-           text-align: center;
-        }
-               body {
-           font-family: sans-serif;
-        }
-         
-         img {
-            width: 300px;
-         }
-        h2, h3 {
-           color: #00a2c6
-        }
-         
-         body {
-          font-family: 'Quicksand', sans-serif;
-        }
-       footer {
-           padding: 20px;
-           color: white;
-           background-color: #00a2c6;
-           text-align: center;
-           font-weight: bold;
-        }
-        #mymenu{
-           background-color: #00a2c6;
-           width: 100%;
-
-        }
-        .jumbotron {
-           font-size: 20px;
-           padding: 45px;
-           background-color: #00c8eb;
-           text-align: center;
-           color: white;
-        }
-        .menu{
-            text-align: center;
-            align-content: center;
-            position: sticky;
-        }
-        
-        ul {
-          list-style-type: none;
-          margin: 0;
-          padding: 0;
-        }
-        .menu > ul >li{
-            float: left;
-             display: inline;
-             margin: 15px;
-        }
-        @media only screen and (min-width: 1024px) {    
-            .kiri{
-                float: left;
-                width: 870px;
-                padding: 10px;
-                margin-bottom: 40px;
-            }
-            footer{
-                position: fixed;
-                bottom: 0px;
-                width: 100%;
-            }
-        }
-        .kanan{
-        }
-       ul.a {
-          list-style-type: circle;
-          padding-left: 15px;
-        }
-       
-   </style>
+<link rel="stylesheet" href='css/site.css' />
+<link rel="stylesheet" href='css/modal.css' />
 </head>
 <body>
     <header>
     <div class="jumbotron">
-        <img src="img/profile.jpg" class="foto"/>
+       <img src="assets/profile.jpg" alt="foto profile Dicky Surachman" class="foto"/>
        <h1>Dicky Surachman</h1>
        <p>Passionate, Focus, Professional</p>
        <div id="mymenu">
-    <nav class="menu" >
-       <ul>
-           <li><a href="#education">Education</a></li>
-           <li><a href="#experience">Experiences</a></li>
-           <li><a href="#project">Projects</a></li>
-       </ul>
-   </nav>
-   
+        <nav class="menu" >
+           <ul>
+               <li><a href="#education">Education</a></li>
+               <li><a href="#experience">Experiences</a></li>
+               <li><a href="#project">Projects</a></li>
+           </ul>
+       </nav>   
     </div>
     </div>
-    
-     </header>
+    </header>
    <main>
    <div class="kiri">
    <article id="experience">
@@ -208,18 +106,18 @@ using PHP Yii Framework and MySQ</li>
     <h3>These are my project as individual or team developer</h3>
    <section>
        <h3>2021 | KEMA Hotel Website</h3>
-       <img src="img/kema.jpg" alt="Website KEMA">
+       <img src="assets/kema.jpg" alt="Website KEMA" id="myImg">
        <p>Lead Developer for website development and Reservation Online System integrated Midtrans Payment gateway using PHP Laravel Framework and MySQL </p>
    </section>
    <section>
        <h3>2021 | Amoypreneur (Profile Company and Ecommerce Website)</h3>
-       <img src="img/amoy.JPG" alt="Amoypreneur Website">
+       <img src="assets/amoy.JPG" alt="Amoypreneur Website"  id="myImg2" onclick="imageopen(this.src)">
        <p>Web Developer for Developing website for personal and ecommerce business
 using PHP Yii Framework and MySQL </p>
    </section>
     <section>
        <h3>2020 | Mujikaryautama </h3>
-       <img src="img/mku.jpg" alt="Amoypreneur Website">
+       <img src="assets/mku.jpg" alt="Muji Karya Utama Website"  id="myImg3">
        <p>Web Developer for Developing property agent and company website @ 
 mujikaryautama.com</p>
    </section>
@@ -227,6 +125,13 @@ mujikaryautama.com</p>
     </div>
     <aside>
     <div class="kanan">
+        <article class="profile">
+               <h3><u>Dicoding Account</u></h3>
+               <img src="assets/profile.jpg" alt="foto profile Dicoding" style="width:150px;"><br>
+                <b>Account Name:</b> Dicky Surachman<br>
+                <b>Bergabung sejak 24 May 2021</b><br>
+                <b><img src="assets/loc.JPG" style="width:15px;">Kota Tangerang, Banten</b><br>
+       </article>
          <article class="profile">
                <h3><u>Contact</u></h3>
                <h4>Email</h4>
@@ -236,7 +141,7 @@ mujikaryautama.com</p>
                <h4>Address</h4>
                <u>Tangerang, Banten</u>
                <h4>Website</h4>
-               <u><a href="https://dickysurachman.github.io">https://dickysurachman.github.io</a></u>
+               <u><a href="https://dickysurachman.github.io" target="_blank">https://dickysurachman.github.io</a></u>
        </article>
        <article class="profile">
                <h3><u>Personal Info</u></h3>
@@ -275,23 +180,20 @@ mujikaryautama.com</p>
         </ul>
        </article>
 
-       <script>
-        window.onscroll = function() {myFunction()};
-        var header = document.getElementById("mymenu");
-        var sticky = header.offsetTop;
-        function myFunction() {
-          if (window.pageYOffset > sticky) {
-            header.classList.add("sticky");
-          } else {
-            header.classList.remove("sticky");
-          }
-        }
-       </script>
     </div>
-</aside>
+    </aside>
+    <div id="myModal" class="modal">
+      <span class="close">&times;</span>
+      <img class="modal-content" id="img01">
+      <div id="caption"></div>
+    </div>
     </main>
+    
+
 	  <footer>
-        &copy; 2022, Dicoding Academy
+        &copy; 2022 Dicoding Academy
      </footer>
+     <script type="text/javascript" src="js/scrool.js"></script>
+     <script type="text/javascript" src="js/pop.js"></script>
 </body>
 </html>

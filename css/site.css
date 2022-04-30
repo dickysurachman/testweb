@@ -1,0 +1,99 @@
+ @import url('https://fonts.googleapis.com/css?family=Quicksand:400,700&display=swap');
+       .foto{
+        float: left;
+        width: 100px;
+       }
+       .sticky {
+          position: fixed;
+          top: 0;
+          background-color: #00a2c6;
+          margin-left: -45px;
+          overflow-x: auto;
+        }
+
+        header {
+            display: inline;
+        }
+       nav a {
+           font-size: 18px;
+           font-weight: 400;
+           text-decoration: none;
+           color: white;
+        }
+        nav a:hover {
+           font-weight: bold;
+        }
+      
+       .profile header {
+           text-align: center;
+        }    
+         img {
+            width: 300px;
+         }
+        h2, h3 {
+           color: #00a2c6
+        }
+         
+         body {
+          font-family: 'Quicksand', sans-serif;
+        }
+       footer {
+           padding: 20px;
+           color: white;
+           background-color: #00a2c6;
+           text-align: center;
+           font-weight: bold;
+        }
+        #mymenu{
+           background-color: #00a2c6;
+           width: 100%;
+
+        }
+        .jumbotron {
+           font-size: 20px;
+           padding: 45px;
+           background-color: #00c8eb;
+           text-align: center;
+           color: white;
+           margin: -8px;
+        }
+        .menu{
+            text-align: center;
+            align-content: center;
+            position: sticky;
+        }
+        
+        ul {
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+        }
+        .menu > ul >li{
+            float: left;
+             display: inline;
+             margin: 15px;
+        }
+        @media only screen and (min-width: 1024px) {    
+            .kiri{
+                float: left;
+                width: 870px;
+                padding: 10px;
+                margin-bottom: 40px;
+            }
+
+            footer{
+                position: fixed;
+                bottom: 0px;
+                width: 100%;
+            }
+        }
+        .kanan{
+        }
+       ul.a {
+          list-style-type: circle;
+          padding-left: 15px;
+        }
+        footer{
+            margin: -8px;
+        }
+       
